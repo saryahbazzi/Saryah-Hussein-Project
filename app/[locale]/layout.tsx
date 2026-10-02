@@ -26,7 +26,11 @@ const displayAr = Amiri({
   display: "swap",
 });
 
-const CLIENT_NAMESPACES = ["meta", "common", "nav", "pricing", "auth"] as const;
+// Namespaces shipped to the browser (client components). Landing-only copy stays server-side.
+const CLIENT_NAMESPACES = [
+  "meta", "common", "nav", "app", "pricing", "auth", "occasions", "sampleCard",
+  "wizard", "templates", "dashboard", "checkin", "admin", "ticket",
+] as const;
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -70,7 +74,7 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
   const all = await getMessages();
   // Only ship the namespaces that client components use; the rest stays server-side.
-  const messages = Object.fromEntries(CLIENT_NAMESPACES.map((ns) => [ns, all[ns]]));
+  const messages = Object.fromEntries(CLIENT_NAMESPACES.map((ns) => [ns, all[ns as keyof typeof all]]));
 
   return (
     <html

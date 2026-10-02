@@ -20,6 +20,7 @@ export const AREA_ROLES: Record<string, readonly Role[]> = {
   dashboard: ["host", "planner", "admin"],
   events: ["host", "planner", "admin"],
   checkin: ["staff", "host", "planner", "admin"],
+  clients: ["planner", "admin"],
   admin: ["admin"],
 };
 

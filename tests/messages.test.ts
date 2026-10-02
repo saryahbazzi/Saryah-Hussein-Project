@@ -1,6 +1,5 @@
 import { describe, expect, it } from "vitest";
-import ar from "@/messages/ar.json";
-import en from "@/messages/en.json";
+import { ar, en } from "@/messages";
 
 const keys = (o: unknown, p = ""): string[] =>
   typeof o === "object" && o !== null

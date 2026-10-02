@@ -1,9 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
-import { AppShell } from "@/components/app/app-shell";
-import { getSession } from "@/lib/auth/session";
-import { redirect } from "@/i18n/navigation";
-
-export const dynamic = "force-dynamic";
+import { DemoApp } from "@/components/app/demo-app";
 
 export default async function AppLayout({
   children,
@@ -14,7 +10,5 @@ export default async function AppLayout({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const session = await getSession();
-  if (!session) redirect({ href: "/login", locale });
-  return <AppShell session={session!} locale={locale}>{children}</AppShell>;
+  return <DemoApp>{children}</DemoApp>;
 }

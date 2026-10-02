@@ -16,3 +16,6 @@ export function serviceRoleKey() {
   if (!key) throw new Error("SUPABASE_SERVICE_ROLE_KEY is not set.");
   return key;
 }
+
+/** "demo" (default): the whole app runs on browser-side mock data. "supabase": real auth/DB (app pages not yet wired). */
+export const isSupabaseMode = () => process.env.NEXT_PUBLIC_DATA_MODE === "supabase";
