@@ -1,0 +1,142 @@
+{
+  "templates": {
+    "meta": {
+      "title": "Invitation templates",
+      "description": "Browse elegant static, animated and video invitation templates for weddings, engagements, birthdays and dinners. Preview with your own names, then send on WhatsApp."
+    },
+    "hero": {
+      "eyebrow": "Templates",
+      "title": "Find the card that feels like your celebration",
+      "lead": "Filter by occasion, style and format, open any card and type your own names to see it come alive."
+    },
+    "filters": {
+      "occasion": "Occasion",
+      "style": "Style",
+      "kind": "Format",
+      "count": "{count, plural, one {# template} other {# templates}}",
+      "reset": "Clear filters",
+      "empty": "No templates match these filters",
+      "emptyBody": "Try removing one of the filters to see more designs."
+    },
+    "occasions": {
+      "wedding": "Wedding",
+      "engagement": "Engagement",
+      "birthday": "Birthday",
+      "dinner": "Dinner",
+      "party": "Party"
+    },
+    "styles": {
+      "classic": "Classic",
+      "modern": "Modern",
+      "najdi": "Najdi",
+      "floral": "Floral"
+    },
+    "kinds": {
+      "static": "Static card",
+      "animated": "Animated",
+      "video": "Video"
+    },
+    "card": {
+      "preview": "Preview {name}",
+      "price": "From {price} per event"
+    },
+    "preview": {
+      "close": "Close preview",
+      "editHint": "Type your own details and the card updates instantly.",
+      "language": "Card language",
+      "lang": { "ar": "Arabic", "en": "English" },
+      "hosts": "Host names",
+      "headline": "Headline",
+      "date": "Date",
+      "venue": "Venue",
+      "musicOn": "Play music",
+      "musicOff": "Pause music",
+      "videoBadge": "Video invitation",
+      "animatedBadge": "Animated with music",
+      "tier": {
+        "standard": "Classic card",
+        "premium": "Animated or video invitation"
+      },
+      "price": "{price} per event",
+      "perGuest": "plus {price} per guest, VAT added at checkout",
+      "ctaNote": "You can change everything later in the editor.",
+      "cta": "Use this template"
+    },
+    "sample": {
+      "ar": {
+        "hosts": "محمد ونورة",
+        "headline": "يدعوانكم لحضور حفل زفافهما",
+        "date": "الخميس 3 ديسمبر 2026",
+        "venue": "قاعة النخيل، الرياض",
+        "eyebrow": {
+          "wedding": "حفل زفاف",
+          "engagement": "حفل خطوبة",
+          "birthday": "عيد ميلاد",
+          "dinner": "عشاء",
+          "party": "حفلة"
+        }
+      },
+      "en": {
+        "hosts": "Mohammed & Noura",
+        "headline": "invite you to celebrate",
+        "date": "Thursday, 3 December 2026",
+        "venue": "Al Nakheel Hall, Riyadh",
+        "eyebrow": {
+          "wedding": "WEDDING",
+          "engagement": "ENGAGEMENT",
+          "birthday": "BIRTHDAY",
+          "dinner": "DINNER",
+          "party": "PARTY"
+        }
+      }
+    }
+  },
+  "pricingPage": {
+    "meta": {
+      "title": "Pricing",
+      "description": "Simple pricing for WhatsApp invitations: a flat event fee plus a small fee per guest. No subscription, VAT shown clearly."
+    },
+    "hero": {
+      "eyebrow": "Pricing",
+      "title": "One flat fee per event, plus a little per guest",
+      "lead": "No subscription and no surprises. Use the calculator to see your total before you start."
+    },
+    "included": {
+      "title": "What is included in every event",
+      "items": {
+        "design": { "title": "Invitation design", "body": "Pick a template and make it yours with names, colours and Arabic or English text." },
+        "whatsapp": { "title": "WhatsApp delivery", "body": "Every guest receives the invitation on WhatsApp with one-tap reply buttons." },
+        "rsvp": { "title": "Live RSVP tracking", "body": "See who confirmed, declined or has not replied, in real time." },
+        "qr": { "title": "Personal QR tickets", "body": "Confirmed guests automatically receive their own entry QR code." },
+        "reminders": { "title": "Smart reminders", "body": "Friendly reminders go out 7 days and 1 day before the event." },
+        "checkin": { "title": "Door check-in", "body": "Your team scans QR codes at the entrance, even on a phone." },
+        "privacy": { "title": "Privacy built in", "body": "Guests can opt out at any time and you can erase their data in one tap." }
+      }
+    },
+    "compare": {
+      "title": "Classic or animated?",
+      "feature": "Feature",
+      "classic": "Classic card",
+      "premium": "Animated or video",
+      "base": "Event fee",
+      "perGuest": "Per guest",
+      "design": "Designed invitation",
+      "motion": "Animated card",
+      "music": "Background music",
+      "video": "Video invitation",
+      "yes": "Included",
+      "no": "Not included",
+      "note": "Prices exclude {vat}% VAT, which is shown at checkout. Billing starts from {min} guests."
+    },
+    "planners": {
+      "title": "Planning events for clients?",
+      "body": "Planner accounts manage many events and client lists in one place. The same simple pricing applies to every event, with no seat fees."
+    },
+    "cta": {
+      "title": "Ready when you are",
+      "body": "Create your first invitation in a few minutes.",
+      "primary": "Create invitation",
+      "secondary": "Browse templates"
+    }
+  }
+}

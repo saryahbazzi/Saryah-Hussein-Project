@@ -1,0 +1,55 @@
+{
+  "ticket": {
+    "meta": { "title": "Your invitation" },
+    "loading": "Opening your invitation…",
+    "greeting": "Hello {name}",
+    "greetingLead": "You are warmly invited",
+    "invalid": {
+      "title": "This invitation link isn't valid",
+      "body": "The link may be incomplete or have been changed. Please open it again from the WhatsApp message, or ask the host to resend your invitation.",
+      "home": "Go to Dawati"
+    },
+    "notFound": {
+      "title": "We couldn't find this invitation",
+      "body": "The link is genuine, but the guest list isn't available here. This demo keeps its data in the browser it was created in, so open the link on the same device, or ask the host to resend it.",
+      "home": "Go to Dawati"
+    },
+    "music": { "on": "Play music", "off": "Pause music" },
+    "party": "{count, plural, one {# guest} other {# guests}}",
+    "details": {
+      "title": "Event details",
+      "when": "When",
+      "where": "Where",
+      "openMaps": "Open in Maps",
+      "addCalendar": "Add to calendar",
+      "calendarNote": "Downloads a calendar file you can open on your phone.",
+      "calendarDescription": "Invitation from {hosts}. Party of {party}.",
+      "partyLabel": "Your party"
+    },
+    "rsvp": {
+      "title": "Will you be joining us?",
+      "lead": "Let {hosts} know so they can prepare for you.",
+      "yes": "Yes, I'll attend",
+      "no": "Sorry, I can't",
+      "working": "Sending your reply…",
+      "confirmedTitle": "You're confirmed. We can't wait to see you!",
+      "declinedTitle": "Thank you for letting us know",
+      "declinedBody": "We'll miss you. If your plans change, you can still switch your answer below.",
+      "changeToYes": "Actually, I can come",
+      "changeToNo": "Change to “I can't attend”",
+      "stop": "Stop messages",
+      "stopHint": "Opt out of WhatsApp messages about this event.",
+      "stoppedTitle": "You won't receive any more messages",
+      "stoppedBody": "We've stopped all messages for this event. Your invitation link remains available here.",
+      "demoNote": "Demo note: in production this answer is the guest's reply on WhatsApp. These buttons simulate it."
+    },
+    "pass": {
+      "eyebrow": "Entry pass",
+      "title": "Show this at the entrance",
+      "qrLabel": "Entry QR code for {name}",
+      "checkedIn": "Checked in at {time}",
+      "checkedInHint": "This pass has been used. Welcome!",
+      "guest": "Guest"
+    }
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "legal": {
+    "common": {
+      "draftTitle": "Draft template: not legal advice",
+      "draftBody": "This document is a working draft prepared for product demonstration. It has not been reviewed by counsel and must be reviewed and approved by qualified Saudi legal counsel before the service is launched. Bracketed items and placeholder addresses must be completed.",
+      "updated": "Last updated: {date}",
+      "toc": "On this page",
+      "tocMobile": "Jump to a section",
+      "otherDoc": "Also read:"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "lead": "How Dawati handles personal data, in line with the Saudi Personal Data Protection Law (PDPL) and its implementing regulations.",
+      "sections": [
+        {
+          "id": "scope",
+          "title": "1. Scope",
+          "paras": [
+            "This policy explains how Dawati (“we”, “us”) collects, uses, shares and protects personal data when you use our website and our WhatsApp-based invitation service.",
+            "It applies to hosts and event planners who create an account, and to guests who receive an invitation through the service. This draft describes the intended operation of the production service; the interactive demonstration stores its data only in your own browser."
+          ],
+          "items": []
+        },
+        {
+          "id": "roles",
+          "title": "2. Our role: controller and processor",
+          "paras": [
+            "Under the PDPL, the role we play depends on whose data it is:"
+          ],
+          "items": [
+            "Account data (the name, email address, phone number and organisation of hosts and planners): Dawati is the controller. We decide why and how this data is used.",
+            "Guest data (the names, phone numbers and party sizes of people a host invites, and their RSVP and attendance): the host is the controller and Dawati acts as a processor on the host's documented instructions.",
+            "Hosts are responsible for having a lawful basis to contact their guests. Planners who manage events for clients must make sure the client has authorised this use."
+          ]
+        },
+        {
+          "id": "data",
+          "title": "3. Data we collect",
+          "paras": [],
+          "items": [
+            "Account data: name, email address, mobile number, role, and the organisation name of planners.",
+            "Guest data supplied by the host: guest name, mobile number and party size.",
+            "RSVP and attendance data: whether a guest confirmed or declined, when they replied, and whether they were checked in at the door.",
+            "Message logs: the type, time and delivery status of each WhatsApp message sent for an event, and the replies received from guests.",
+            "Order data: the event, the number of guests, amounts and VAT of each order. We do not store payment card numbers on our own systems.",
+            "Technical data: the language preference and the minimum information needed to keep you signed in."
+          ]
+        },
+        {
+          "id": "purposes",
+          "title": "4. Why we use data",
+          "paras": [
+            "We use personal data only for the following purposes:"
+          ],
+          "items": [
+            "To create and manage accounts, events and guest lists.",
+            "To send invitations, reminders and entry tickets by WhatsApp on the host's instruction, and to record the replies.",
+            "To let hosts and door staff see who confirmed and who attended.",
+            "To bill the host, issue invoices and meet tax obligations.",
+            "To keep the service secure, prevent abuse and investigate incidents.",
+            "To meet legal obligations. We do not sell personal data and we do not use guest data for our own marketing."
+          ]
+        },
+        {
+          "id": "consent",
+          "title": "5. Consent and opting out",
+          "paras": [
+            "Before a host sends invitations, the host must confirm that they have permission to contact every person on the guest list. We record this attestation with the date for each guest.",
+            "Every guest can stop messages at any time by replying STOP to any message. We honour an opt-out immediately: the guest is marked as opted out and receives no further messages for any event.",
+            "Guests can also ask us or the host to access, correct or delete their data (see section 8)."
+          ],
+          "items": []
+        },
+        {
+          "id": "subprocessors",
+          "title": "6. WhatsApp and other service providers",
+          "paras": [
+            "Messages are delivered through the WhatsApp Business Platform operated by Meta Platforms, which acts as our sub-processor and receives the recipient's phone number and the message content in order to deliver it. Meta processes this data under its own terms and privacy notice.",
+            "We also use hosting, database and payment service providers. We share personal data with them only as needed to provide the service and under written terms that require appropriate protection. A current list of sub-processors is available on request."
+          ],
+          "items": []
+        },
+        {
+          "id": "retention",
+          "title": "7. How long we keep data",
+          "paras": [],
+          "items": [
+            "Guest data, message logs and attendance records are deleted 90 days after the event date.",
+            "Hosts can delete a guest or a whole event's guest list earlier at any time from the event dashboard.",
+            "Account data is kept while the account is active and deleted when the account is closed, except where the law requires us to keep it.",
+            "Order and invoice records are kept for the period required by Saudi tax and commercial law.",
+            "Encrypted backups may hold deleted data for a limited period [to be confirmed, for example 35 days] before they are overwritten."
+          ]
+        },
+        {
+          "id": "rights",
+          "title": "8. Your rights",
+          "paras": [
+            "Under the PDPL, individuals have the following rights regarding their personal data:"
+          ],
+          "items": [
+            "Access: to know what data we hold about you and to receive a copy.",
+            "Export: to obtain your data in a readable, commonly used format where applicable.",
+            "Correction: to have inaccurate or incomplete data corrected.",
+            "Deletion: to have your data destroyed when it is no longer needed or when you withdraw consent, subject to legal retention duties.",
+            "Withdrawal of consent: to withdraw consent at any time. Withdrawal does not affect processing carried out before it."
+          ]
+        },
+        {
+          "id": "exercise",
+          "title": "9. How to exercise your rights",
+          "paras": [
+            "Hosts and planners can export or delete guest data directly in the app from the event dashboard.",
+            "Guests can reply STOP to any message to opt out, or write to privacy@dawati.example to request access, correction or deletion. Where a guest's data is held on behalf of a host, we will pass the request to the host or carry it out on the host's behalf. We aim to respond within [30] days."
+          ],
+          "items": []
+        },
+        {
+          "id": "security",
+          "title": "10. Security",
+          "paras": [
+            "We apply technical and organisational measures that are appropriate to the risk, including:"
+          ],
+          "items": [
+            "Encryption of data in transit.",
+            "Role-based access: hosts, planners, door staff and administrators only see what their role requires.",
+            "Digitally signed entry tickets, so that a ticket cannot be forged or altered.",
+            "Audit records of check-in scans and administrative actions.",
+            "Limiting the data we collect to what is needed for the event."
+          ]
+        },
+        {
+          "id": "transfers",
+          "title": "11. Transfers outside the Kingdom",
+          "paras": [
+            "Some of our providers, including WhatsApp (Meta), process data outside the Kingdom of Saudi Arabia. Where personal data is transferred abroad we do so in line with the PDPL and its regulations on cross-border transfers, using the safeguards they require. [Hosting locations and the legal mechanism for each transfer must be confirmed by counsel before launch.]"
+          ],
+          "items": []
+        },
+        {
+          "id": "children",
+          "title": "12. Children",
+          "paras": [
+            "The service is intended for adults. Hosts must not add the personal data of a child to a guest list without the consent of the child's parent or guardian. We do not knowingly collect data directly from children."
+          ],
+          "items": []
+        },
+        {
+          "id": "cookies",
+          "title": "13. Cookies and local storage",
+          "paras": [
+            "We use only strictly necessary storage in your browser, such as keeping you signed in and remembering your language. We do not use advertising or cross-site tracking cookies. The interactive demonstration also saves demo data in your browser's local storage, which you can clear at any time."
+          ],
+          "items": []
+        },
+        {
+          "id": "complaints",
+          "title": "14. Complaints",
+          "paras": [
+            "If you are not satisfied with how we handle your data, please contact us first at privacy@dawati.example. You also have the right to complain to the Saudi Data and Artificial Intelligence Authority (SDAIA), the competent authority under the PDPL."
+          ],
+          "items": []
+        },
+        {
+          "id": "changes",
+          "title": "15. Changes to this policy",
+          "paras": [
+            "We may update this policy. We will change the date at the top and, for material changes, notify account holders in the app or by email."
+          ],
+          "items": []
+        },
+        {
+          "id": "contact",
+          "title": "16. Contact",
+          "paras": [
+            "Dawati, [registered company name and address, to be completed]. Privacy enquiries: privacy@dawati.example."
+          ],
+          "items": []
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "lead": "The rules for using Dawati to design, send and manage WhatsApp invitations.",
+      "sections": [
+        {
+          "id": "service",
+          "title": "1. The service",
+          "paras": [
+            "Dawati lets hosts and event planners design digital invitations, send them to guests on WhatsApp, collect RSVPs, send reminders and entry tickets, and check guests in at the door. By creating an account or using the service you agree to these terms."
+          ],
+          "items": []
+        },
+        {
+          "id": "accounts",
+          "title": "2. Accounts and roles",
+          "paras": [
+            "You must provide accurate information and keep your sign-in details secure. You are responsible for activity under your account. The service has the following roles:"
+          ],
+          "items": [
+            "Host: creates events for their own occasions.",
+            "Planner: manages events and sub-accounts for clients and may invite team members.",
+            "Door staff: scans tickets at the event.",
+            "Administrator: operated by Dawati to run the platform."
+          ]
+        },
+        {
+          "id": "host",
+          "title": "3. Host responsibilities",
+          "paras": [
+            "You are responsible for the guest data you upload. You confirm that:"
+          ],
+          "items": [
+            "your contact list is lawful and each person on it is someone you are entitled to invite;",
+            "you have the permission needed to send each guest a WhatsApp message about the event;",
+            "you will remove any guest who asks not to be contacted, and you will not override an opt-out;",
+            "the invitation content you write is accurate and does not infringe the rights of others."
+          ]
+        },
+        {
+          "id": "use",
+          "title": "4. Acceptable use",
+          "paras": [
+            "You may not use the service to:"
+          ],
+          "items": [
+            "send spam, bulk or unsolicited messages, or marketing that is not an invitation to your own event;",
+            "send unlawful, deceptive, hateful, or sexually explicit content;",
+            "contact people who have not agreed to be contacted or who have opted out;",
+            "attempt to disrupt, reverse engineer or gain unauthorised access to the service;",
+            "resell the service without our written agreement."
+          ]
+        },
+        {
+          "id": "pricing",
+          "title": "5. Pricing and payment",
+          "paras": [
+            "Prices are in Saudi riyals (SAR) and are shown before value added tax unless stated otherwise. Saudi VAT of 15% is added at checkout. Each event is charged a flat fee that depends on the template tier, plus a fee per invited guest. The total is shown before you pay and is billed when you check out. We issue a tax invoice for each order."
+          ],
+          "items": []
+        },
+        {
+          "id": "refunds",
+          "title": "6. Refunds",
+          "paras": [
+            "[Refund and cancellation terms to be defined, for example refunds before invitations are sent and treatment of messages already delivered. To be completed with counsel.]"
+          ],
+          "items": []
+        },
+        {
+          "id": "availability",
+          "title": "7. Availability and WhatsApp",
+          "paras": [
+            "We aim to keep the service available but do not promise uninterrupted operation. Message delivery depends on WhatsApp and Meta. We are not responsible for delays, failures or changes to the WhatsApp platform or its policies, or for a guest's number not being reachable on WhatsApp."
+          ],
+          "items": []
+        },
+        {
+          "id": "ip",
+          "title": "8. Intellectual property",
+          "paras": [
+            "Dawati and its licensors own the platform, templates, designs and trademarks. We grant you a limited, non-exclusive licence to use them to create invitations for your events. You keep ownership of the content and guest data you provide and grant us the right to process it to run the service."
+          ],
+          "items": []
+        },
+        {
+          "id": "liability",
+          "title": "9. Limitation of liability",
+          "paras": [
+            "[Limitation of liability and disclaimers to be drafted with counsel in line with Saudi law. Nothing in these terms excludes liability that cannot be excluded by law.]"
+          ],
+          "items": []
+        },
+        {
+          "id": "law",
+          "title": "10. Governing law",
+          "paras": [
+            "These terms are governed by the laws of the Kingdom of Saudi Arabia. [Competent courts or dispute resolution forum to be confirmed by counsel.]"
+          ],
+          "items": []
+        },
+        {
+          "id": "changes",
+          "title": "11. Changes",
+          "paras": [
+            "We may update these terms. We will change the date at the top and notify account holders of material changes. Continued use after a change means you accept the updated terms."
+          ],
+          "items": []
+        },
+        {
+          "id": "contact",
+          "title": "12. Contact",
+          "paras": [
+            "Dawati, [registered company name and address, to be completed]. Questions about these terms: support@dawati.example. Privacy requests: privacy@dawati.example."
+          ],
+          "items": []
+        }
+      ]
+    }
+  }
+}

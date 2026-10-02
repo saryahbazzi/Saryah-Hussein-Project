@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "brand": "Dawati",
+    "title": "WhatsApp invitations for Saudi celebrations",
+    "description": "Design a beautiful invitation, send it on WhatsApp, collect RSVPs and check guests in with QR codes. Weddings, engagements and events in Riyadh and Jeddah."
+  },
+  "common": {
+    "switchLanguage": "العربية",
+    "switchLanguageLabel": "التبديل إلى اللغة العربية",
+    "notFound": "We couldn't find that page",
+    "backHome": "Back to home"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "skip": "Skip to content",
+    "menu": "Open menu",
+    "how": "How it works",
+    "templates": "Templates",
+    "planners": "For planners",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "login": "Log in",
+    "cta": "Create invitation"
+  },
+  "app": {
+    "signOut": "Sign out",
+    "welcome": "Welcome, {name}",
+    "dashboardSoon": "This area is being built.",
+    "roles": {
+      "host": "Host",
+      "planner": "Planner",
+      "staff": "Staff",
+      "admin": "Admin"
+    },
+    "areas": {
+      "admin": "Admin",
+      "checkin": "Check-in"
+    },
+    "nav": {
+      "events": "Events",
+      "newEvent": "New event",
+      "templates": "Templates",
+      "clients": "Clients",
+      "checkin": "Check-in",
+      "admin": "Admin",
+      "menu": "Menu",
+      "main": "App navigation"
+    },
+    "demo": {
+      "banner": "Interactive demo: data is stored in your browser only.",
+      "switchRole": "Switch role",
+      "reset": "Reset demo data",
+      "resetDone": "Demo data reset",
+      "loading": "Loading…",
+      "account": "Account and demo controls"
+    }
+  },
+  "footer": {
+    "tagline": "WhatsApp-native invitations for weddings and celebrations.",
+    "cities": "Riyadh · Jeddah",
+    "productLabel": "Product",
+    "legalLabel": "Legal",
+    "templates": "Templates",
+    "pricing": "Pricing",
+    "planners": "For planners",
+    "privacy": "Privacy policy",
+    "terms": "Terms of service",
+    "rights": "© 2026 Dawati. All rights reserved."
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "dashboard": {
+    "guestStatus": {
+      "pending": "Not sent",
+      "sent": "Sent",
+      "delivered": "Delivered",
+      "confirmed": "Confirmed",
+      "declined": "Declined",
+      "failed": "Failed",
+      "opted_out": "Opted out"
+    },
+    "eventStatus": { "draft": "Draft", "live": "Live", "done": "Done" },
+    "cities": { "riyadh": "Riyadh", "jeddah": "Jeddah" },
+    "confirm": {
+      "typeToConfirm": "Type {phrase} to confirm",
+      "cancel": "Cancel"
+    },
+    "rsvp": {
+      "summary": "{confirmed} confirmed, {declined} declined, {awaiting} awaiting a reply, out of {total} guests"
+    },
+    "export": {
+      "columns": {
+        "name": "Name",
+        "phone": "Phone",
+        "partySize": "Party size",
+        "status": "Status",
+        "sentAt": "Sent at",
+        "deliveredAt": "Delivered at",
+        "respondedAt": "Responded at",
+        "checkedInAt": "Checked in at",
+        "consentSource": "Consent source",
+        "consentAt": "Consent at"
+      }
+    },
+    "card": {
+      "daysTo": "{count, plural, =0 {Today} =1 {Tomorrow} other {In {n} days}}",
+      "daysAgo": "{count, plural, =0 {Today} =1 {Yesterday} other {{n} days ago}}",
+      "client": "Client: {name}",
+      "owner": "Owner: {name}",
+      "stats": {
+        "sent": "Sent",
+        "delivered": "Delivered",
+        "confirmed": "Confirmed",
+        "declined": "Declined",
+        "pending": "Pending"
+      },
+      "checkedIn": "{done} / {total} confirmed guests checked in",
+      "noGuests": "No guests added yet.",
+      "manage": "Manage event",
+      "checkin": "Check-in",
+      "export": "Export CSV"
+    },
+    "list": {
+      "greeting": "Welcome back, {name}",
+      "lead": "Your events at a glance: who has replied, who is coming, and what needs attention.",
+      "leadPlanner": "All your clients' events in one place, grouped by client.",
+      "leadAdmin": "Every event on the platform, with its owner.",
+      "newEvent": "New event",
+      "overview": "Overview",
+      "totals": {
+        "events": "Events",
+        "guests": "Guests invited",
+        "rate": "Confirmation rate",
+        "rateHint": "of guests contacted",
+        "messages": "Messages sent"
+      },
+      "empty": {
+        "title": "Your first celebration starts here",
+        "body": "Create an invitation, add your guests and send it on WhatsApp in a few minutes.",
+        "cta": "Create an event"
+      },
+      "tabsLabel": "Show events",
+      "tabs": { "upcoming": "Upcoming", "past": "Past", "drafts": "Drafts" },
+      "clientFilter": "Filter by client",
+      "allClients": "All clients",
+      "ownEvents": "No client (own events)",
+      "search": "Search events by title",
+      "resultCount": "{count, plural, =0 {No events} one {1 event} other {{n} events}}",
+      "noMatch": {
+        "title": "No events match your search",
+        "body": "Try a different title or clear the search box."
+      },
+      "emptyTab": {
+        "upcoming": { "title": "No upcoming events", "body": "When you send invitations for a future date, the event appears here." },
+        "past": { "title": "No past events yet", "body": "Events move here after their date has passed." },
+        "drafts": { "title": "No drafts", "body": "Events you have started but not sent show up here." }
+      }
+    },
+    "addGuest": {
+      "name": "Guest name",
+      "phone": "Mobile number",
+      "phoneHint": "Saudi mobile, e.g. 05X XXX XXXX",
+      "party": "Party size",
+      "submit": "Add guest",
+      "errors": {
+        "name": "Enter the guest's name.",
+        "phone": "Enter a valid Saudi mobile number.",
+        "duplicate": "This number is already on the list."
+      }
+    },
+    "guests": {
+      "title": "Guests",
+      "add": "Add a guest",
+      "closeAdd": "Close",
+      "search": "Search by name or number",
+      "sortLabel": "Sort guests",
+      "sort": { "name": "Sort: name", "status": "Sort: status", "activity": "Sort: latest activity" },
+      "filterLabel": "Filter by status",
+      "filterAll": "All",
+      "status": {
+        "pending": "Not sent",
+        "sent": "Sent",
+        "delivered": "Delivered",
+        "confirmed": "Confirmed",
+        "declined": "Declined",
+        "failed": "Failed",
+        "opted_out": "Opted out",
+        "attended": "Attended"
+      },
+      "columns": {
+        "name": "Name",
+        "phone": "Phone",
+        "party": "Party",
+        "statusCol": "Status",
+        "activity": "Last activity",
+        "actions": "Actions"
+      },
+      "partyOf": "Party of {n}",
+      "noActivity": "No activity yet",
+      "showing": "Showing {shown} of {total} guests",
+      "showMore": "Show {n} more ({rest} remaining)",
+      "empty": "No guests yet. Add your first guest above.",
+      "noMatch": "No guests match these filters.",
+      "send": "Send",
+      "resend": "Resend",
+      "sending": "Sending…",
+      "resendWhy": {
+        "confirmed": "Already confirmed, no need to resend.",
+        "declined": "This guest declined, so we do not message them again.",
+        "opted_out": "This guest opted out and won't be messaged again."
+      },
+      "resent": "Invitation sent again to {name}.",
+      "added": "{name} was added. Press Send to invite them.",
+      "demoReply": "Demo: simulate reply",
+      "demoReplyFor": "Demo control: simulate a WhatsApp reply from {name}",
+      "demoHint": "Demo only: pretends the guest replied on WhatsApp.",
+      "demoConfirm": "Guest confirms",
+      "demoDecline": "Guest declines",
+      "demoStop": "Guest sends STOP",
+      "erase": "Delete data",
+      "eraseTitle": "Delete {name}'s data?",
+      "eraseBody": "This permanently removes the guest's name, number and message history from this event. It cannot be undone.",
+      "eraseConfirm": "Delete guest data",
+      "erased": "{name}'s data was deleted."
+    },
+    "reminders": {
+      "title": "Reminder schedule",
+      "explain": "Dawati automatically reminds guests on WhatsApp 7 days and 1 day before the event. Guests who declined or opted out are never reminded.",
+      "kind": { "reminder_7d": "7-day reminder", "reminder_1d": "1-day reminder" },
+      "state": { "scheduled": "Scheduled", "due": "Due now", "sent": "Sent", "skipped": "Skipped" },
+      "recipients": "{count, plural, =0 {No guests to remind} one {1 guest will be reminded} other {{n} guests will be reminded}}",
+      "sentTo": "{count, plural, one {Sent to 1 guest} other {Sent to {n} guests}}",
+      "sendNow": "Send now",
+      "sending": "Sending…",
+      "result": "{count, plural, =0 {No reminders needed sending.} one {Reminder sent to 1 guest.} other {Reminders sent to {n} guests.}}",
+      "demoNote": "Demo: \"Send now\" fires the reminder immediately instead of waiting for its scheduled time."
+    },
+    "log": {
+      "title": "Message log",
+      "lead": "The 20 most recent WhatsApp messages for this event.",
+      "empty": "No messages yet.",
+      "erasedGuest": "Deleted guest",
+      "kind": {
+        "invite": "Invitation",
+        "reminder_7d": "7-day reminder",
+        "reminder_1d": "1-day reminder",
+        "ticket": "QR ticket",
+        "reply": "Guest reply",
+        "reply_yes": "Guest replied: attending",
+        "reply_no": "Guest replied: not attending",
+        "reply_stop": "Guest replied: STOP"
+      },
+      "status": {
+        "queued": "Queued",
+        "sent": "Sent",
+        "delivered": "Delivered",
+        "read": "Read",
+        "failed": "Failed",
+        "received": "Received"
+      }
+    },
+    "privacy": {
+      "title": "Privacy and guest data",
+      "consent": "Guest consent",
+      "consentAt": "You confirmed on {date} that your guests agreed to be contacted.",
+      "consentNone": "Consent is recorded when you send the first invitations.",
+      "retention": "Data retention",
+      "retentionBody": "Guest data is deleted automatically 90 days after the event.",
+      "optOut": "Opt-outs",
+      "optOutBody": "{count, plural, =0 {No guest has opted out. Anyone who replies STOP won't be messaged again.} one {1 guest opted out and won't be messaged again.} other {{n} guests opted out and won't be messaged again.}}",
+      "export": "Export all guest data (CSV)",
+      "erase": "Delete all guest data",
+      "deleteEvent": "Delete this event",
+      "eraseTitle": "Delete all guest data?",
+      "eraseBody": "{count, plural, =0 {There is no guest data to delete.} one {This permanently removes 1 guest and their message history. The event itself stays.} other {This permanently removes {n} guests and their message history. The event itself stays.}}",
+      "eraseConfirm": "Delete all guest data",
+      "deleteTitle": "Delete this event?",
+      "deleteBody": "The event, its guests, messages and order record are removed permanently. This cannot be undone.",
+      "deleteConfirm": "Delete event",
+      "phrase": "DELETE",
+      "erased": "All guest data for this event was deleted."
+    },
+    "detail": {
+      "back": "All events",
+      "leaving": "Closing event…",
+      "notFound": {
+        "title": "We couldn't find this event",
+        "body": "It may have been deleted, or it belongs to another account.",
+        "cta": "Back to my events"
+      },
+      "client": "Client: {name}",
+      "owner": "Owner: {name}",
+      "map": "Open in Maps",
+      "sendInvites": "{count, plural, one {Send invitation (1 guest)} other {Send invitations ({n} guests)}}",
+      "sending": "Sending… {done} of {total}",
+      "sendResult": "{count, plural, =0 {No invitations to send.} one {1 invitation sent. Delivery and replies will appear below.} other {{n} invitations sent. Delivery and replies will appear below.}}",
+      "guestView": "Open guest's WhatsApp view",
+      "guestViewHint": "Opens the ticket page exactly as {name} sees it from WhatsApp.",
+      "exportCsv": "Export CSV",
+      "checkin": "Check-in page",
+      "liveSummary": "Update: {confirmed} confirmed, {declined} declined, {pending} pending, {delivered} delivered.",
+      "stats": {
+        "title": "Live results",
+        "sent": "Sent",
+        "ofTotal": "of {total} guests",
+        "delivered": "Delivered",
+        "pct": "{pct}%",
+        "confirmed": "Confirmed",
+        "declined": "Declined",
+        "pending": "Pending",
+        "pendingHint": "Awaiting a reply",
+        "attended": "Attended",
+        "attendedHint": "of {confirmed} confirmed",
+        "people": "People expected",
+        "peopleHint": "Confirmed guests incl. companions"
+      },
+      "legend": {
+        "confirmed": "Confirmed",
+        "declined": "Declined",
+        "awaiting": "Awaiting reply",
+        "other": "Failed or opted out"
+      }
+    }
+  }
+}
