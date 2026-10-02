@@ -60,7 +60,6 @@ export function Wizard() {
     if (spec) s = { ...s, templateSlug: spec.slug, details: { ...s.details, occasion: s.details.title ? s.details.occasion : spec.occasion }, custom: { ...s.custom, palette: stored?.templateSlug === spec.slug ? s.custom.palette : null } };
     setState(s);
     setHydrated(true);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => { if (hydrated && !created) save(state); }, [state, hydrated, created]);

@@ -117,7 +117,7 @@ export function WhatsAppPreview({ state, spec, palette }: { state: WizardState; 
           <Frame title={t("sender")} subtitle={t("verified")} label={t("invitationCaption")}>
             <div dir={dir} lang={lang}>
               <Bubble time="8:41 PM">
-                <InvitationCard spec={specFull} palette={palette} lang={lang} animate={false} content={content} className="!rounded-xl !shadow-none" />
+                <InvitationCard spec={specFull} palette={palette} lang={lang} animate={false} content={{ ...content, message: undefined }} className="!rounded-xl !shadow-none" />
                 <p className="whitespace-pre-line px-1.5 pt-2 text-[0.82rem] leading-relaxed">{invite.text}</p>
               </Bubble>
               <div className="mt-1 max-w-[92%] space-y-1">

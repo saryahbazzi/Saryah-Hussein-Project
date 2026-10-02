@@ -51,7 +51,7 @@ export function TeamSection({ planner, state, onNotice }: { planner: DemoUser; s
             ))}
             {invites.map((i) => (
               <li key={i.id} className="flex flex-wrap items-center gap-3 px-5 py-4">
-                <div className="min-w-0 flex-1"><p className="font-semibold text-navy"><bdi dir="ltr">{i.email}</bdi></p><p className="text-xs text-oud-soft">{t("invitedOn", { date: f.date(i.createdAt) })}</p></div>
+                <div className="min-w-[12rem] flex-1"><p className="font-semibold text-navy"><bdi dir="ltr">{i.email}</bdi></p><p className="text-xs text-oud-soft">{t("invitedOn", { date: f.date(i.createdAt) })}</p></div>
                 <Badge tone="sky">{t(`roles.${i.role}`)}</Badge>
                 <Badge tone="gold">{t("pending")}</Badge>
                 <button type="button" onClick={() => { dispatch((s) => revokeInvite(s, i.id)); onNotice(t("revoked", { email: i.email })); }} className="inline-flex min-h-11 items-center px-2 text-sm font-semibold text-rose underline underline-offset-4">{t("revoke")}</button>
