@@ -1,0 +1,54 @@
+project_id = "dawati"
+
+[api]
+port = 54321
+schemas = ["public"]
+
+[db]
+port = 54322
+major_version = 15
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]
+
+[studio]
+port = 54323
+
+[inbucket]
+port = 54324
+
+[auth]
+site_url = "http://127.0.0.1:3000"
+additional_redirect_urls = ["http://127.0.0.1:3000/ar", "http://127.0.0.1:3000/en"]
+jwt_expiry = 3600
+enable_signup = true
+
+[auth.email]
+enable_signup = true
+enable_confirmations = true
+otp_length = 6
+otp_expiry = 600
+max_frequency = "10s"
+
+[auth.email.template.magic_link]
+subject = "Your Dawati code / رمز دعواتي"
+content_path = "./supabase/templates/otp.html"
+
+[auth.email.template.confirmation]
+subject = "Your Dawati code / رمز دعواتي"
+content_path = "./supabase/templates/otp.html"
+
+# Phone OTP. Locally we skip the SMS provider and use fixed test codes.
+# In production configure Twilio/MessageBird/Vonage (or route OTP via WhatsApp).
+[auth.sms]
+enable_signup = true
+enable_confirmations = true
+template = "Your Dawati code is {{ .Code }} / رمز دعواتي {{ .Code }}"
+max_frequency = "10s"
+
+[auth.sms.test_otp]
+966500000001 = "123456"
+966500000002 = "123456"
+966500000003 = "123456"
+966500000004 = "123456"

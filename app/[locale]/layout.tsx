@@ -26,6 +26,8 @@ const displayAr = Amiri({
   display: "swap",
 });
 
+const CLIENT_NAMESPACES = ["meta", "common", "nav", "pricing", "auth"] as const;
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -66,7 +68,9 @@ export default async function LocaleLayout({
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
-  const messages = await getMessages();
+  const all = await getMessages();
+  // Only ship the namespaces that client components use; the rest stays server-side.
+  const messages = Object.fromEntries(CLIENT_NAMESPACES.map((ns) => [ns, all[ns]]));
 
   return (
     <html
