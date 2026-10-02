@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+/* Design tokens — warm Gulf palette. Text colours are chosen for WCAG AA on ivory. */
+@theme {
+  --color-ivory: #fbf7ef;
+  --color-sand: #f2e9d8;
+  --color-sand-deep: #e6d8bd;
+  --color-oud: #2a1f17;
+  --color-oud-soft: #5b4a3c;
+  --color-navy: #14213d;
+  --color-navy-soft: #243659;
+  --color-gold: #b8893b;
+  --color-gold-bright: #d9b061;
+  --color-gold-ink: #7d5a17; /* gold for text: 5.9:1 on ivory */
+  --color-rose: #9a4a45;
+  --color-sage: #4f6b57;
+  --color-line: #e3d6bc;
+
+  --font-sans: var(--font-plex), "IBM Plex Sans Arabic", system-ui, sans-serif;
+  --font-display: var(--font-display-latin), var(--font-display-ar), serif;
+
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --shadow-card: 0 1px 2px rgb(42 31 23 / 0.06), 0 12px 32px -12px rgb(42 31 23 / 0.18);
+  --shadow-lift: 0 2px 4px rgb(42 31 23 / 0.08), 0 28px 56px -20px rgb(20 33 61 / 0.35);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-oud);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+}
+
+/* Arabic display type reads best slightly larger and with no tracking. */
+:lang(ar) .font-display {
+  font-family: var(--font-display-ar), serif;
+  letter-spacing: 0;
+  line-height: 1.35;
+}
+:lang(en) .font-display {
+  font-family: var(--font-display-latin), serif;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+::selection {
+  background: var(--color-gold-bright);
+  color: var(--color-oud);
+}
+
+/* Subtle geometric pattern (eight-point star lattice), used sparingly. */
+.pattern-star {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'><g fill='none' stroke='%23b8893b' stroke-opacity='.22' stroke-width='1'><path d='M32 6l7 12 13-5-5 13 12 7-12 7 5 13-13-5-7 12-7-12-13 5 5-13-12-7 12-7-5-13 13 5z'/></g></svg>");
+  background-size: 64px 64px;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(var(--r, 0deg)); }
+  50% { transform: translateY(-8px) rotate(var(--r, 0deg)); }
+}
+
+.reveal { opacity: 0; }
+.reveal.is-visible { animation: rise 0.8s var(--ease-soft) both; animation-delay: var(--d, 0ms); }
+.float-slow { animation: float-slow 7s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; }
+  .reveal.is-visible, .float-slow { animation: none; }
+  * { transition-duration: 0.01ms !important; }
+}
+@media (scripting: none) {
+  .reveal { opacity: 1; }
+}

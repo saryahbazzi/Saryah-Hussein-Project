@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "brand": "Dawati",
+    "title": "WhatsApp invitations for Saudi celebrations",
+    "description": "Design a beautiful invitation, send it on WhatsApp, collect RSVPs and check guests in with QR codes. Weddings, engagements and events in Riyadh and Jeddah."
+  },
+  "common": {
+    "switchLanguage": "العربية",
+    "switchLanguageLabel": "التبديل إلى اللغة العربية",
+    "notFound": "We couldn't find that page",
+    "backHome": "Back to home"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "skip": "Skip to content",
+    "menu": "Open menu",
+    "how": "How it works",
+    "templates": "Templates",
+    "planners": "For planners",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "login": "Log in",
+    "cta": "Create invitation"
+  },
+  "hero": {
+    "badge": "Riyadh · Jeddah",
+    "title": "Invite every guest where they already are: WhatsApp.",
+    "subtitle": "Choose a beautiful card, upload your guest list, and we send the invitation, collect confirmations, remind guests and check them in at the door.",
+    "primary": "Create your invitation",
+    "secondary": "Browse templates",
+    "trust": "No app to install. Guests reply in one tap.",
+    "bubbleFrom": "Dawati · WhatsApp",
+    "bubbleBody": "Mohammed & Noura invite you to their wedding on Thursday. Will you join us?",
+    "bubbleYes": "Yes, I'll attend",
+    "bubbleNo": "Sorry, I can't"
+  },
+  "sampleCard": {
+    "eyebrow": "TOGETHER WITH THEIR FAMILIES",
+    "title": "Mohammed & Noura",
+    "host": "invite you to celebrate",
+    "date": "Thursday, 14 May 2026",
+    "venue": "Al Nakheel Hall, Riyadh"
+  },
+  "how": {
+    "eyebrow": "How it works",
+    "title": "From idea to full house in three steps",
+    "lead": "No design skills, no chasing replies, no paper lists at the door.",
+    "steps": {
+      "one": {
+        "title": "Design your invitation",
+        "body": "Add your event details, pick a card and make it yours with your names, colors and language."
+      },
+      "two": {
+        "title": "Upload your guests",
+        "body": "Import a CSV or Excel list. We check every Saudi number and send the invitation on WhatsApp."
+      },
+      "three": {
+        "title": "Confirm and welcome",
+        "body": "Guests confirm in WhatsApp and receive a personal QR code. Your team scans it at the entrance."
+      }
+    }
+  },
+  "features": {
+    "eyebrow": "Everything included",
+    "title": "Hosting, handled with care",
+    "items": {
+      "whatsapp": {
+        "title": "Sent on WhatsApp",
+        "body": "Your invitation arrives in the app your guests open every day, so it gets seen."
+      },
+      "rsvp": {
+        "title": "Live RSVP tracking",
+        "body": "See who was sent, delivered, confirmed, declined or is still pending, in real time."
+      },
+      "qr": {
+        "title": "QR check-in",
+        "body": "Each confirmed guest gets a unique code. Staff scan with a phone and see valid or already used instantly."
+      },
+      "reminders": {
+        "title": "Automatic reminders",
+        "body": "Gentle reminders go out one week and one day before the event, with no effort from you."
+      },
+      "bilingual": {
+        "title": "Arabic and English",
+        "body": "Write your invitation in Arabic, English or both, with proper right-to-left typography."
+      },
+      "privacy": {
+        "title": "Privacy first",
+        "body": "Built around the Saudi PDPL: guest consent, easy opt-out, and export or deletion of your data."
+      }
+    }
+  },
+  "occasions": {
+    "eyebrow": "Templates",
+    "title": "A card for every occasion",
+    "lead": "Elegant static cards, animated invitations and video invites with music.",
+    "browse": "Browse all templates",
+    "items": {
+      "wedding": "Wedding",
+      "engagement": "Engagement",
+      "birthday": "Birthday",
+      "dinner": "Dinner",
+      "party": "Party"
+    },
+    "kinds": {
+      "static": "Static card",
+      "animated": "Animated with music",
+      "video": "Video invitation"
+    }
+  },
+  "planners": {
+    "eyebrow": "For event planners",
+    "title": "Run every client's event from one place",
+    "lead": "Built for wedding and event planners who manage many celebrations at once.",
+    "cta": "Open a planner account",
+    "points": {
+      "multi": {
+        "title": "Multiple events",
+        "body": "Manage dozens of live events with one dashboard and one view of every guest list."
+      },
+      "team": {
+        "title": "Team access",
+        "body": "Invite coordinators and entrance staff with the right permissions for each role."
+      },
+      "clients": {
+        "title": "Client sub-accounts",
+        "body": "Keep each client's events, guests and invoices neatly separated."
+      },
+      "brand": {
+        "title": "Your standards",
+        "body": "Reuse customized templates and guest lists across clients and seasons."
+      }
+    }
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "Simple, honest pricing",
+    "lead": "A flat fee per event plus a small amount per guest. Pay once, no subscription.",
+    "tierLabel": "Invitation type",
+    "guestsLabel": "Number of guests",
+    "perGuestNote": "{price} per guest",
+    "tiers": {
+      "standard": { "name": "Classic card", "desc": "Static designed invitation" },
+      "premium": { "name": "Animated or video", "desc": "Motion, video and music" }
+    },
+    "summary": {
+      "base": "Event fee",
+      "guests": "{count, plural, one {# guest} other {# guests}}",
+      "vat": "VAT ({rate}%)",
+      "total": "Total"
+    },
+    "cta": "Start with this plan",
+    "footnote": "Prices in Saudi riyals. VAT is added at checkout."
+  },
+  "faq": {
+    "eyebrow": "Questions",
+    "title": "Good to know",
+    "items": {
+      "whatsapp": {
+        "q": "Do my guests need to install anything?",
+        "a": "No. Guests receive the invitation in WhatsApp and reply with one tap."
+      },
+      "guests": {
+        "q": "What guest list formats can I upload?",
+        "a": "CSV or Excel files. We validate Saudi mobile numbers (+966) and tell you about any that need fixing before sending."
+      },
+      "qr": {
+        "q": "How does QR check-in work?",
+        "a": "Confirmed guests receive a personal QR code. Your staff open the check-in page on a phone, scan, and instantly see if it is valid or already used."
+      },
+      "reminders": {
+        "q": "Are reminders sent automatically?",
+        "a": "Yes. Guests who have not declined receive a reminder one week and one day before your event."
+      },
+      "privacy": {
+        "q": "How do you handle guests' phone numbers?",
+        "a": "You confirm you have permission to contact your guests, every message includes an opt-out, and you can export or delete guest data at any time."
+      },
+      "planners": {
+        "q": "Can I manage events for my clients?",
+        "a": "Yes. Planner accounts support multiple events, team members and client sub-accounts."
+      }
+    }
+  },
+  "finalCta": {
+    "title": "Your guests are one message away",
+    "lead": "Create your invitation in minutes and let us handle the rest.",
+    "cta": "Create your invitation"
+  },
+  "footer": {
+    "tagline": "WhatsApp-native invitations for weddings and celebrations.",
+    "cities": "Riyadh · Jeddah",
+    "productLabel": "Product",
+    "legalLabel": "Legal",
+    "templates": "Templates",
+    "pricing": "Pricing",
+    "planners": "For planners",
+    "privacy": "Privacy policy",
+    "terms": "Terms of service",
+    "rights": "© 2026 Dawati. All rights reserved."
+  }
+}
