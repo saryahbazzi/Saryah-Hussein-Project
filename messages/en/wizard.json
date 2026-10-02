@@ -1,1 +1,184 @@
-{}
+{
+  "wizard": {
+    "meta": { "title": "Create invitation" },
+    "title": "Create your invitation",
+    "lead": "A few calm steps from idea to invitations on WhatsApp.",
+    "loading": "Loading",
+    "steps": {
+      "details": "Event details",
+      "template": "Template",
+      "customize": "Customize",
+      "guests": "Guest list",
+      "preview": "WhatsApp preview",
+      "summary": "Summary",
+      "checkout": "Payment"
+    },
+    "progress": { "label": "Progress", "step": "Step {current} of {total}", "done": "(completed)" },
+    "nav": { "back": "Back", "next": "Continue" },
+    "errors": {
+      "fixErrors": "Please fix the highlighted fields.",
+      "titleRequired": "Give your event a name.",
+      "occasionInvalid": "Choose an occasion.",
+      "dateRequired": "Choose the event date.",
+      "timeRequired": "Choose the start time.",
+      "dateInvalid": "That date doesn't look right.",
+      "dateFuture": "The event must be in the future.",
+      "venueRequired": "Add the venue name.",
+      "mapsInvalid": "Paste a Google Maps link, or leave it empty.",
+      "templateRequired": "Choose a template to continue.",
+      "hostsRequired": "Add the host names shown on the card.",
+      "headlineRequired": "Add a short headline for the card.",
+      "paletteInvalid": "Each colour must be a valid hex value.",
+      "noGuests": "Add at least one guest with a valid Saudi mobile number.",
+      "consentRequired": "Please confirm you have your guests' permission."
+    },
+    "placeholders": {
+      "hosts": "Your names",
+      "headline": "invite you to celebrate",
+      "date": "Event date",
+      "venue": "Venue",
+      "guest": "Guest name"
+    },
+    "details": {
+      "title": "Tell us about the event",
+      "lead": "These details appear on the invitation and in every WhatsApp message.",
+      "fields": {
+        "title": { "label": "Event name", "hint": "Guests see this in the message, for example \"Mohammed & Noura's wedding\".", "placeholder": "Mohammed & Noura's wedding" },
+        "occasion": "Occasion",
+        "city": "City",
+        "cities": { "riyadh": "Riyadh", "jeddah": "Jeddah" },
+        "date": "Date",
+        "time": "Start time",
+        "timeHint": "Riyadh time",
+        "venue": { "label": "Venue", "placeholder": "Al Nakheel Hall" },
+        "mapsUrl": { "label": "Google Maps link (optional)", "hint": "Guests can tap it to get directions." },
+        "client": { "label": "Client (optional)", "hint": "Link this event to one of your clients.", "none": "No client" }
+      }
+    },
+    "template": {
+      "title": "Choose your template",
+      "lead": "Every card already shows your details. Pick the one that feels right.",
+      "showingFor": "Showing {occasion} templates",
+      "showingAll": "Showing all templates",
+      "showAll": "Show all occasions",
+      "showFiltered": "Only my occasion",
+      "none": "No templates available for this occasion yet. Show all occasions to continue.",
+      "selected": "Selected",
+      "kinds": { "static": "Static", "animated": "Animated", "video": "Video" }
+    },
+    "customize": {
+      "title": "Make it yours",
+      "lead": "Names, wording, language and colours. The card updates as you type.",
+      "livePreview": "Live preview",
+      "hosts": { "label": "Host names", "hint": "Shown large on the card.", "placeholder": "Mohammed & Noura" },
+      "headline": { "label": "Headline", "hint": "A short line under the names." },
+      "headlineDefault": "invite you to celebrate",
+      "message": { "label": "Personal message (optional)", "hint": "Up to 140 characters.", "placeholder": "Your presence completes our joy." },
+      "language": { "label": "Invitation language", "ar": "Arabic", "en": "English", "both": "Both", "bothHint": "The card is shown in Arabic; messages go out in Arabic and English where supported." },
+      "palette": {
+        "title": "Colours",
+        "presets": "Preset palettes",
+        "original": "Template colours",
+        "names": { "navyGold": "Navy & gold", "emerald": "Emerald", "blush": "Blush rose", "sand": "Sand & oud", "midnight": "Midnight", "ivory": "Ivory & navy" },
+        "fields": { "bg": "Background", "ink": "Text", "accent": "Accent", "frame": "Frame" },
+        "lowContrast": "Text and background contrast is {ratio}:1. Aim for at least 4.5:1 so guests can read the card."
+      }
+    },
+    "ai": {
+      "title": "Adapt this template to my theme",
+      "lead": "Describe the look you imagine and we will suggest colours and wording.",
+      "label": "Your theme",
+      "placeholder": "Navy and gold, Najdi style",
+      "examples": { "one": "Navy and gold, Najdi style", "two": "Soft blush and sand, floral", "three": "Emerald green with gold" },
+      "button": "Adapt",
+      "loading": "Adapting…",
+      "badgeAi": "AI",
+      "badgeDemo": "Demo AI",
+      "applied": "Applied to your card.",
+      "undo": "Undo",
+      "undone": "Reverted to your previous design."
+    },
+    "guests": {
+      "title": "Add your guests",
+      "lead": "Upload a spreadsheet or paste a list. We check every Saudi mobile number before anything is sent.",
+      "upload": { "drop": "Drop a CSV or Excel file here", "formats": "Columns: name, phone, optional number of guests (.csv or .xlsx)", "browse": "Choose a file" },
+      "sample": "Download sample CSV",
+      "paste": { "label": "Or paste from your clipboard", "placeholder": "Mohammed Alotaibi, 0501234567\nNoura Alqahtani, 0559876543", "button": "Add pasted guests" },
+      "importEmpty": "We couldn't find any guests in that data.",
+      "importError": "We couldn't read that file. Try a CSV or .xlsx export.",
+      "fileTooBig": "That file is too large. The limit is 5 MB.",
+      "tooMany": "That would exceed the limit of {max} guests per event.",
+      "imported": "{count, plural, one {# row} other {# rows}} imported: {valid} ready, {invalid} need attention.",
+      "counts": {
+        "valid": "{count, plural, one {# ready} other {# ready}}",
+        "invalid": "{count, plural, one {# invalid} other {# invalid}}",
+        "duplicates": "{count, plural, one {# duplicate} other {# duplicates}}"
+      },
+      "filter": { "label": "Show", "all": "All", "issues": "Needs attention" },
+      "clearAll": "Clear list",
+      "empty": "No guests yet. Upload a file, paste a list, or add a guest manually.",
+      "noIssues": "Everything looks good.",
+      "row": { "name": "Guest name", "phone": "Mobile number", "partySize": "Number of guests", "remove": "Remove {name}" },
+      "issue": { "ok": "Ready", "missing_name": "Name missing", "invalid_phone": "Invalid number", "duplicate": "Duplicate" },
+      "showMore": "{count, plural, one {Show # more} other {Show # more}}",
+      "add": "Add a guest",
+      "consent": {
+        "label": "I confirm I have my guests' permission to contact them on WhatsApp and understand they can opt out at any time.",
+        "hint": "Required under Saudi data protection rules (PDPL). Guests can reply STOP to opt out."
+      }
+    },
+    "preview": {
+      "title": "See it on WhatsApp",
+      "lead": "This is what your guests will receive, using the first names on your list.",
+      "guest": "Preview as guest",
+      "prev": "Previous guest",
+      "next": "Next guest",
+      "language": "Message language",
+      "lang": { "ar": "Arabic", "en": "English" },
+      "invitationCaption": "The invitation",
+      "followUpCaption": "Reminders and ticket",
+      "sender": "Dawati",
+      "verified": "Business account",
+      "when": { "d7": "7 days before", "d1": "1 day before", "ticket": "After the guest confirms" }
+    },
+    "summary": {
+      "title": "Review and price",
+      "lead": "Check the details, then continue to payment.",
+      "breakdown": "Price breakdown",
+      "rows": { "event": "Event", "when": "When", "where": "Where", "template": "Template", "guests": "Guests" },
+      "cities": { "riyadh": "Riyadh", "jeddah": "Jeddah" },
+      "tier": { "standard": "Classic card", "premium": "Animated or video" },
+      "base": { "standard": "Event fee (classic card)", "premium": "Event fee (animated or video)" },
+      "guests": "{count, plural, one {# guest} other {# guests}} × {fee}",
+      "subtotal": "Subtotal",
+      "vat": "VAT ({rate}%)",
+      "total": "Total",
+      "minNote": "Billing starts from {min} guests, even though your list has {count}."
+    },
+    "checkout": {
+      "title": "Payment",
+      "lead": "Choose how you would like to pay.",
+      "demoNotice": "Demo payment: no card is charged and no real money moves.",
+      "method": "Payment method",
+      "methods": {
+        "mada": { "name": "mada", "hint": "Saudi debit card" },
+        "applePay": { "name": "Apple Pay", "hint": "Pay with your device" },
+        "stcPay": { "name": "STC Pay", "hint": "Digital wallet" },
+        "card": { "name": "Visa / Mastercard", "hint": "Credit or debit card" }
+      },
+      "noCard": "No card details are collected in this demo.",
+      "pay": "Pay and send invitations",
+      "paying": "Processing…",
+      "secureNote": "Invitations are sent right after payment."
+    },
+    "success": {
+      "title": "Invitations are on their way",
+      "lead": "\"{title}\" is live. Guests are receiving their invitation on WhatsApp now.",
+      "sending": "Sending invitations…",
+      "sentAll": "{count, plural, one {# invitation sent} other {# invitations sent}}",
+      "progress": "{sent} of {total} sent",
+      "openDashboard": "Open event dashboard",
+      "another": "Create another event"
+    }
+  }
+}

@@ -3,7 +3,7 @@ import type { PricingTier } from "@/lib/pricing/config";
 import { tierOf } from "@/lib/templates/catalog";
 import type { InboundEvent } from "@/lib/messaging/types";
 import type {
-  Customization, DemoEvent, DemoGuest, DemoMessage, DemoState, DemoTemplate, GuestStats, GuestStatus, MessageKindName,
+  Customization, DemoClient, DemoEvent, DemoGuest, DemoInvite, InviteRole, DemoMessage, DemoState, DemoTemplate, GuestStats, GuestStatus, MessageKindName,
 } from "./types";
 
 /** Pure state transitions. The browser store (store.ts) wraps these; tests call them directly. */
@@ -175,4 +175,35 @@ export function reminderSchedule(s: DemoState, ev: DemoEvent, now = Date.now()) 
 export function reminderRecipients(s: DemoState, eventId: string, kind: ReminderKind): DemoGuest[] {
   const already = new Set(s.messages.filter((m) => m.eventId === eventId && m.kind === kind).map((m) => m.guestId));
   return guestsOf(s, eventId).filter((g) => !already.has(g.id) && ["sent", "delivered", "confirmed", "pending"].includes(g.status) && g.sentAt);
+}
+
+/** Planner sub-accounts and team access. */
+export function addClient(s: DemoState, plannerId: string, name: string, contact: string): { state: DemoState; client: DemoClient } {
+  const client: DemoClient = { id: uid("c"), plannerId, name: name.trim(), contact };
+  return { state: { ...s, clients: [...s.clients, client] }, client };
+}
+
+export function addInvite(s: DemoState, plannerId: string, email: string, role: InviteRole, nowIso = new Date().toISOString()): DemoState {
+  const invite: DemoInvite = { id: uid("i"), plannerId, email: email.trim().toLowerCase(), role, status: "pending", createdAt: nowIso };
+  return { ...s, invites: [...(s.invites ?? []), invite] };
+}
+
+export function revokeInvite(s: DemoState, inviteId: string): DemoState {
+  return { ...s, invites: (s.invites ?? []).filter((i) => i.id !== inviteId) };
+}
+
+/** Appends one guest to an event (ignored if the phone is already on the list). Used by the dashboard's add-guest form. */
+export function addGuest(s: DemoState, eventId: string, input: GuestInput, consentAtIso = new Date().toISOString()): DemoState {
+  if (s.guests.some((g) => g.eventId === eventId && g.phone === input.phone)) return s;
+  const guest: DemoGuest = {
+    id: uid("g"), eventId, name: input.name, phone: input.phone, partySize: input.partySize ?? 1, status: "pending",
+    consentAt: consentAtIso, consentSource: "host_attested",
+  };
+  return { ...s, guests: [...s.guests, guest] };
+}
+
+/** Removes a template. Callers must not delete templates that events still use (unpublish them instead). */
+export function deleteTemplate(s: DemoState, slug: string): DemoState {
+  if (s.events.some((e) => e.templateSlug === slug)) return s;
+  return { ...s, templates: s.templates.filter((t) => t.slug !== slug) };
 }

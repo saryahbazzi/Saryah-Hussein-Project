@@ -65,7 +65,7 @@ export function DemoApp({ children }: { children: React.ReactNode }) {
               );
             })}
           </nav>
-          <div className="flex items-center gap-2">
+          <div className="flex min-w-0 flex-wrap items-center justify-end gap-2">
             <label className="sr-only" htmlFor="role-switch">{t("demo.switchRole")}</label>
             <select
               id="role-switch"
@@ -75,7 +75,7 @@ export function DemoApp({ children }: { children: React.ReactNode }) {
                 const next = state.users.find((u) => u.id === e.target.value);
                 if (next) router.push(homeFor(next.role));
               }}
-              className="min-h-11 rounded-full border border-oud/20 bg-ivory px-3 text-sm font-semibold"
+              className="min-h-11 max-w-[11rem] rounded-full border border-oud/20 bg-ivory px-3 text-sm font-semibold"
             >
               {demoUsers.map((u) => (
                 <option key={u.id} value={u.id}>{t(`roles.${u.role}`)} · {u.name}</option>

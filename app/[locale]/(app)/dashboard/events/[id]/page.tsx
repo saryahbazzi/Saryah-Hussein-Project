@@ -1,8 +1,8 @@
 import { setRequestLocale } from "next-intl/server";
+import { EventDetail } from "@/components/dashboard/event-detail";
 
-// STUB: replace with the real page.
-export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
+export default async function Page({ params }: { params: Promise<{ locale: string; id: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <div className="p-10">event-detail: coming soon</div>;
+  return <EventDetail />;
 }

@@ -1,8 +1,8 @@
 import { setRequestLocale } from "next-intl/server";
+import { AdminDashboard } from "@/components/admin/admin-dashboard";
 
-// STUB: replace with the real page.
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <div className="p-10">admin: coming soon</div>;
+  return <AdminDashboard />;
 }

@@ -1,8 +1,8 @@
 import { setRequestLocale } from "next-intl/server";
+import { Scanner } from "@/components/checkin/scanner";
 
-// STUB: replace with the real page.
-export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
+export default async function ScannerPage({ params }: { params: Promise<{ locale: string; eventId: string }> }) {
+  const { locale, eventId } = await params;
   setRequestLocale(locale);
-  return <div className="p-10">checkin-scanner: coming soon</div>;
+  return <Scanner eventId={eventId} />;
 }

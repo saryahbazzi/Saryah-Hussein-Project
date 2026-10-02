@@ -1,1 +1,313 @@
-{}
+{
+  "admin": {
+    "title": "Admin dashboard",
+    "lead": "Customers, events, messages and templates across the whole platform.",
+    "tabsLabel": "Admin sections",
+    "tabs": {
+      "overview": "Overview",
+      "customers": "Customers",
+      "events": "Events",
+      "messages": "Messages",
+      "templates": "Templates"
+    },
+    "city": {
+      "riyadh": "Riyadh",
+      "jeddah": "Jeddah"
+    },
+    "status": {
+      "live": "Live",
+      "draft": "Draft",
+      "done": "Done"
+    },
+    "kpi": {
+      "customers": "Customers",
+      "customersHint": "{hosts} hosts · {planners} planners",
+      "events": "Events",
+      "eventsHint": "{live} live · {done} done · {draft} draft",
+      "guests": "Guests invited",
+      "guestsHint": "Across all events",
+      "revenue": "Revenue",
+      "revenueHint": "{amount} excl. {vat}% VAT",
+      "messages": "Messages sent",
+      "messagesHint": "Invitations, reminders and tickets",
+      "aov": "Average order value",
+      "aovHint": "Per paid order, incl. VAT",
+      "noBaseline": "No previous period to compare",
+      "vsPrevious": "vs previous 30 days"
+    },
+    "charts": {
+      "month": "Month",
+      "revenueTitle": "Revenue by month",
+      "revenueLead": "Paid orders, last 6 months, including {vat}% VAT.",
+      "revenueCaption": "Revenue by month in Saudi riyals",
+      "revenueValue": "Revenue",
+      "messagesTitle": "Message volume",
+      "messagesLead": "Outbound and inbound messages by kind, last 6 months.",
+      "messagesCaption": "Messages per month, split by kind",
+      "groups": {
+        "invite": "Invitations",
+        "reminders": "Reminders",
+        "tickets": "Tickets",
+        "replies": "Guest replies"
+      },
+      "cityTitle": "Events by city",
+      "occasionTitle": "Events by occasion"
+    },
+    "top": {
+      "title": "Top customers by spend",
+      "lead": "Total of paid orders, including VAT.",
+      "empty": "No paid orders yet.",
+      "meta": "{count, plural, one {# event} other {# events}}",
+      "all": "See all customers"
+    },
+    "customers": {
+      "search": "Search customers",
+      "searchPlaceholder": "Search by name, organisation or email",
+      "roleFilter": "Filter by role",
+      "allRoles": "All roles",
+      "count": "{count, plural, one {# customer} other {# customers}}",
+      "emptyTitle": "No customers match",
+      "emptyBody": "Try a different search or role.",
+      "noOrg": "Individual",
+      "eventsTitle": "Events",
+      "noEvents": "No events yet.",
+      "clientsTitle": "Clients",
+      "noClients": "No clients yet.",
+      "clientEvents": "{count, plural, one {# event} other {# events}}",
+      "cols": {
+        "name": "Name",
+        "role": "Role",
+        "org": "Organisation",
+        "joined": "Joined",
+        "events": "Events",
+        "guests": "Guests",
+        "spend": "Total spend",
+        "last": "Last event"
+      }
+    },
+    "events": {
+      "search": "Search events",
+      "searchPlaceholder": "Search by event, owner or client",
+      "statusFilter": "Filter by status",
+      "allStatuses": "All statuses",
+      "cityFilter": "Filter by city",
+      "allCities": "All cities",
+      "occasionFilter": "Filter by occasion",
+      "allOccasions": "All occasions",
+      "count": "{count, plural, one {# event} other {# events}}",
+      "emptyTitle": "No events match",
+      "emptyBody": "Try clearing a filter.",
+      "cols": {
+        "event": "Event",
+        "owner": "Owner",
+        "client": "Client",
+        "status": "Status",
+        "date": "Date",
+        "city": "City",
+        "guests": "Guests",
+        "confirmed": "Confirmed",
+        "attended": "Attended",
+        "total": "Order total"
+      }
+    },
+    "messages": {
+      "status": {
+        "queued": "Queued",
+        "sent": "Sent",
+        "delivered": "Delivered",
+        "read": "Read",
+        "failed": "Failed",
+        "received": "Received"
+      },
+      "kinds": {
+        "invite": "Invitation",
+        "reminder_7d": "Reminder (7 days)",
+        "reminder_1d": "Reminder (1 day)",
+        "ticket": "Ticket",
+        "reply": "Guest reply"
+      },
+      "groups": {
+        "invite": "Invitations",
+        "reminders": "Reminders",
+        "tickets": "Tickets",
+        "replies": "Guest replies"
+      },
+      "outbound": "Messages sent",
+      "outboundHint": "Excluding guest replies",
+      "delivered": "Delivery rate",
+      "deliveredHint": "{count, plural, one {# message delivered} other {# messages delivered}}",
+      "failureRate": "Failure rate",
+      "failureHint": "{count, plural, one {# message failed} other {# messages failed}}",
+      "replies": "Guest replies",
+      "repliesHint": "RSVP answers and opt-outs",
+      "funnelTitle": "Delivery funnel",
+      "funnelLead": "Share of outbound messages reaching each stage.",
+      "funnel": {
+        "sent": "Sent to WhatsApp",
+        "delivered": "Delivered",
+        "readOrReplied": "Read or replied"
+      },
+      "byKindTitle": "Volume by kind",
+      "reasonsTitle": "Top failure reasons",
+      "reasonsLead": "Overall failure rate: {rate}.",
+      "noFailures": "No failed messages.",
+      "reasons": {
+        "not_on_whatsapp": "Number is not on WhatsApp",
+        "unknown": "Unknown reason"
+      },
+      "recentTitle": "Most recent messages",
+      "cols": {
+        "time": "Time",
+        "kind": "Kind",
+        "status": "Status",
+        "event": "Event",
+        "guest": "Guest"
+      }
+    },
+    "templates": {
+      "lead": "Every change is saved instantly and shows in the public template gallery.",
+      "new": "New template",
+      "emptyTitle": "No templates",
+      "emptyBody": "Create the first template to show it in the gallery.",
+      "noticePublished": "{name} is now published.",
+      "noticeUnpublished": "{name} is now hidden from the gallery.",
+      "noticeSaved": "{name} saved.",
+      "noticeDeleted": "{name} deleted.",
+      "published": "Published",
+      "hidden": "Hidden",
+      "toggleLabel": "Published: {name}",
+      "tiers": {
+        "standard": "Standard",
+        "premium": "Premium"
+      },
+      "price": "From {price} per event",
+      "usedBy": "{count, plural, =0 {not used yet} one {used by # event} other {used by # events}}",
+      "edit": "Edit",
+      "delete": "Delete",
+      "confirmDelete": "Confirm delete",
+      "cannotDelete": "In use: you can unpublish it but not delete it.",
+      "form": {
+        "editTitle": "Edit template",
+        "newTitle": "New template",
+        "nameEn": "Name (English)",
+        "nameAr": "Name (Arabic)",
+        "slugHint": "Link name: {slug}",
+        "occasion": "Occasion",
+        "style": "Style",
+        "kind": "Kind",
+        "motif": "Motif",
+        "styles": {
+          "classic": "Classic",
+          "modern": "Modern",
+          "najdi": "Najdi",
+          "floral": "Floral"
+        },
+        "motifs": {
+          "star": "Star",
+          "arch": "Arch",
+          "floral": "Floral",
+          "lines": "Lines",
+          "dots": "Dots"
+        },
+        "palette": "Colours",
+        "colors": {
+          "bg": "Background",
+          "ink": "Text",
+          "accent": "Accent",
+          "frame": "Frame"
+        },
+        "hexLabel": "{color} (hex code)",
+        "published": "Published",
+        "publishedHint": "Published templates appear in the public gallery.",
+        "save": "Save changes",
+        "create": "Create template",
+        "cancel": "Cancel",
+        "preview": "Live preview",
+        "errors": {
+          "nameEn": "Enter the English name.",
+          "nameAr": "Enter the Arabic name.",
+          "slugEmpty": "Use letters or numbers in the English name.",
+          "slugTaken": "A template named “{slug}” already exists. Choose a different English name.",
+          "color": "Use a hex colour such as #14213d."
+        }
+      }
+    },
+    "clients": {
+      "title": "Clients and team",
+      "lead": "Run every client's events from one account, and give your team the right level of access.",
+      "leadAdmin": "All planners' clients across the platform.",
+      "summaryLabel": "Portfolio summary",
+      "summary": {
+        "clients": "Clients",
+        "events": "Events",
+        "eventsHint": "Across all clients",
+        "upcoming": "Clients with an upcoming event",
+        "upcomingHint": "Not yet held",
+        "guests": "Guests",
+        "spend": "Spend",
+        "spendHint": "Paid orders, incl. VAT"
+      },
+      "multiEvent": "Each client has its own events, guest lists and spend, so you can manage many events side by side without mixing them up.",
+      "listTitle": "Your clients",
+      "emptyTitle": "No clients yet",
+      "emptyBody": "Add your first client below, then create events on their behalf.",
+      "planner": "Planner: {name}",
+      "card": {
+        "events": "Events",
+        "guests": "Guests",
+        "spend": "Spend",
+        "upcoming": "Next: {title}, {date}",
+        "noUpcoming": "No upcoming event",
+        "view": "View events",
+        "hide": "Hide events"
+      },
+      "detail": {
+        "title": "Events for {name}",
+        "newEvent": "New event for this client",
+        "empty": "No events for this client yet."
+      },
+      "add": {
+        "title": "Add a client",
+        "lead": "A client is a sub-account for one family or company. Contact details are optional.",
+        "name": "Client name",
+        "phone": "Contact phone (optional)",
+        "phoneHint": "Saudi mobile number, for example 0501234567.",
+        "submit": "Add client",
+        "done": "{name} was added to your clients.",
+        "errors": {
+          "name": "Enter the client name.",
+          "duplicate": "You already have a client with this name.",
+          "phone": "Enter a valid Saudi mobile number."
+        }
+      },
+      "adminNote": "Planners manage their own team and add clients from their own account.",
+      "newEventNoClient": "New event without a client",
+      "team": {
+        "title": "Team",
+        "lead": "Invite coordinators to help manage events and door staff to run check-in on the day.",
+        "roles": {
+          "owner": "Owner",
+          "coordinator": "Coordinator",
+          "door_staff": "Door staff"
+        },
+        "roleHint": {
+          "coordinator": "Can create and manage events and guest lists.",
+          "door_staff": "Can only scan tickets at the door."
+        },
+        "invitedOn": "Invited {date}",
+        "pending": "Pending",
+        "revoke": "Cancel invite",
+        "revoked": "Invitation to {email} cancelled.",
+        "sent": "Invitation sent to {email}.",
+        "inviteTitle": "Invite a teammate",
+        "email": "Email address",
+        "role": "Role",
+        "submit": "Send invitation",
+        "errors": {
+          "email": "Enter a valid email address.",
+          "duplicate": "This person is already on your team or invited."
+        }
+      }
+    }
+  }
+}

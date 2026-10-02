@@ -1,1 +1,99 @@
-{}
+{
+  "checkin": {
+    "list": {
+      "title": "Check-in",
+      "lead": "Choose an event to open the door scanner.",
+      "empty": { "title": "No events to scan right now", "body": "Events appear here once they are live. Ask the host to publish the invitations." },
+      "live": "Live",
+      "done": "Finished",
+      "attendedOf": "{attended} of {confirmed} arrived",
+      "progress": "{attended} of {confirmed} confirmed guests have arrived",
+      "people": "{count, plural, one {# person inside} other {# people inside}}",
+      "open": "Open scanner"
+    },
+    "scanner": {
+      "back": "All events",
+      "unavailable": { "title": "This event isn't available for check-in", "body": "It may not be live yet, or it belongs to another account.", "back": "Back to events" },
+      "counter": {
+        "label": "Arrived",
+        "of": "of {confirmed} confirmed",
+        "progress": "{attended} of {confirmed} confirmed guests have arrived",
+        "people": "{people} of {expected} people inside"
+      },
+      "camera": {
+        "start": "Start camera",
+        "stop": "Stop camera",
+        "starting": "Starting camera…",
+        "off": "The camera is off",
+        "offHint": "Tap Start camera, then point it at the guest's QR code.",
+        "scanning": "Point the camera at the QR code",
+        "torchOn": "Light on",
+        "torchOff": "Light off",
+        "soundOn": "Sound on",
+        "soundOff": "Sound off",
+        "viewfinder": "Camera view for scanning QR codes",
+        "errors": {
+          "denied": "Camera access was blocked. Allow the camera for this site in your browser settings, then tap Start camera. You can still check guests in with the manual options below.",
+          "noCamera": "No camera was found on this device. Use the manual options below to check guests in.",
+          "insecure": "The camera only works on a secure (HTTPS) page. Use the manual options below, or open the site over HTTPS.",
+          "generic": "The camera couldn't start. Use the manual options below, or try again."
+        }
+      },
+      "banner": {
+        "valid": "VALID",
+        "welcome": "Welcome",
+        "party": "{count, plural, one {Party of # person} other {Party of # people}}",
+        "used": "ALREADY USED",
+        "usedAt": "First used at {time}",
+        "usedBy": "Scanned by {name}",
+        "invalid": "INVALID",
+        "reasons": {
+          "unknown_code": "This code is not a valid invitation code.",
+          "wrong_event": "This code is not valid for this event.",
+          "unknown_guest": "Unknown code: this guest isn't on the list.",
+          "not_confirmed": "This guest has not confirmed attendance."
+        },
+        "announceValid": "Valid. Welcome {name}. {party}",
+        "announceUsed": "Already used. {name}, first used at {time}.",
+        "announceInvalid": "Invalid. {reason}",
+        "scanNext": "Scan next",
+        "dismiss": "Dismiss result"
+      },
+      "manual": {
+        "title": "Manual check-in",
+        "lead": "For when a code can't be read.",
+        "codeLabel": "Paste or type a code",
+        "codePlaceholder": "e-1.g1-001.…",
+        "codeSubmit": "Check code",
+        "searchLabel": "Search confirmed guests by name or phone",
+        "searchPlaceholder": "Name or phone number",
+        "noResults": "No confirmed guests match.",
+        "checkIn": "Check in",
+        "checkedIn": "Arrived",
+        "party": "{count, plural, one {# person} other {# people}}"
+      },
+      "recent": {
+        "title": "Recent scans",
+        "empty": "No scans yet.",
+        "valid": "Valid",
+        "used": "Already used",
+        "invalid": "Invalid",
+        "unknown": "Unknown code"
+      },
+      "demo": {
+        "title": "Demo: test codes",
+        "lead": "Test the scanner without printing anything. Scan a code from another screen, or tap “Scan this code”.",
+        "show": "Show test codes",
+        "hide": "Hide test codes",
+        "fresh": "Valid: not yet arrived",
+        "used": "Already used",
+        "declined": "Invalid: declined the invitation",
+        "invalid": "Invalid: tampered code",
+        "scanThis": "Scan this code",
+        "qrLabel": "Test QR code for {name}",
+        "tamperedLabel": "Test QR code with a tampered signature",
+        "empty": "This event has no suitable test guests yet."
+      }
+    }
+  }
+}

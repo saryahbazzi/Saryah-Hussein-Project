@@ -20,6 +20,10 @@ export interface DemoUser {
   createdAt: string;
 }
 
+export type InviteRole = "coordinator" | "door_staff";
+/** A pending teammate invitation on a planner account (additive; absent in older saved state). */
+export interface DemoInvite { id: string; plannerId: string; email: string; role: InviteRole; status: "pending"; createdAt: string }
+
 /** A planner's customer (sub-account). */
 export interface DemoClient { id: string; plannerId: string; name: string; contact: string }
 
@@ -121,6 +125,7 @@ export interface DemoState {
   orders: DemoOrder[];
   templates: DemoTemplate[];
   scans: ScanLog[];
+  invites?: DemoInvite[];
 }
 
 export interface GuestStats {
