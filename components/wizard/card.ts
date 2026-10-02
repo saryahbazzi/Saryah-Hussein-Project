@@ -15,6 +15,7 @@ export function buildCardContent(
   c: CustomizeState,
   eyebrow: string,
   placeholders: { hosts: string; headline: string; date: string; venue: string },
+  withMessage = false,
 ): CardContent {
   const iso = startsAtIso(d);
   return {
@@ -23,7 +24,7 @@ export function buildCardContent(
     host: c.headline.trim() || placeholders.headline,
     date: iso ? formatEventDate(iso, cardLang(c)) : placeholders.date,
     venue: d.venue.trim() || placeholders.venue,
-    message: c.message.trim() || undefined,
+    message: withMessage ? c.message.trim() || undefined : undefined,
   };
 }
 

@@ -51,7 +51,8 @@
       "switchRole": "Switch role",
       "reset": "Reset demo data",
       "resetDone": "Demo data reset",
-      "loading": "Loading…"
+      "loading": "Loading…",
+      "account": "Account and demo controls"
     }
   },
   "footer": {

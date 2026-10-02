@@ -82,7 +82,7 @@ export function StepCustomize({ state, update, errors }: StepProps<CustomizeFiel
               spec={spec}
               palette={palette}
               lang={cardLang(c)}
-              content={buildCardContent(d, c, occ(`items.${d.occasion}`), { hosts: ph("hosts"), headline: ph("headline"), date: ph("date"), venue: ph("venue") })}
+              content={buildCardContent(d, c, occ(`items.${d.occasion}`), { hosts: ph("hosts"), headline: ph("headline"), date: ph("date"), venue: ph("venue") }, true)}
             />
           </div>
         </div>

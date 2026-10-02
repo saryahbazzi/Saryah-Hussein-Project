@@ -8,20 +8,20 @@ import "../globals.css";
 
 const plex = IBM_Plex_Sans_Arabic({
   subsets: ["arabic", "latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "700"],
   variable: "--font-plex",
   display: "swap",
 });
 const displayLatin = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  style: ["normal", "italic"],
+  weight: ["600", "700"],
+  style: ["normal"],
   variable: "--font-display-latin",
   display: "swap",
 });
 const displayAr = Amiri({
   subsets: ["arabic"],
-  weight: ["400", "700"],
+  weight: ["700"],
   variable: "--font-display-ar",
   display: "swap",
 });

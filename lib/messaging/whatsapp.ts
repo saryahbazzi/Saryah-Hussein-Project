@@ -2,6 +2,7 @@ import type {
   InboundEvent, InvitationMessage, MessagingProvider, ReminderMessage, SendResult, TicketMessage,
 } from "./types";
 
+/* eslint-disable @typescript-eslint/no-unused-vars -- stub: parameters document the contract */
 /**
  * WhatsApp Business API provider — INTENTIONALLY UNIMPLEMENTED.
  * Fill in each method (Cloud API or a BSP such as 360dialog/Twilio). See lib/messaging/README.md

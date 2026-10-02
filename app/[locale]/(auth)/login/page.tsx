@@ -1,6 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Logo } from "@/components/ui/logo";
-import { LoginForm } from "@/components/auth/login-form";
 import { DemoLogin } from "@/components/auth/demo-login";
 import { isSupabaseMode } from "@/lib/env";
 import { safeNext } from "@/lib/auth/roles";
@@ -24,6 +23,8 @@ export default async function LoginPage({
   const t = await getTranslations("auth");
   const brand = (await getTranslations("meta"))("brand");
   const defaultRole = role === "planner" ? "planner" : "host";
+  // Load the Supabase client code only when real auth is enabled.
+  const LoginForm = isSupabaseMode() ? (await import("@/components/auth/login-form")).LoginForm : null;
 
   return (
     <main className="pattern-star flex min-h-screen flex-col items-center justify-center px-5 py-12">
@@ -31,7 +32,7 @@ export default async function LoginPage({
       <div className="mt-8 w-full max-w-md rounded-[2rem] border border-line bg-ivory/95 p-7 shadow-card sm:p-10">
         <h1 className="font-display text-3xl font-bold text-navy">{t("title")}</h1>
         <p className="mt-2 text-oud-soft">{t("lead")}</p>
-        {isSupabaseMode() ? (
+        {LoginForm ? (
           <LoginForm next={safeNext(next)} defaultRole={defaultRole} />
         ) : (
           <DemoLogin next={safeNext(next)} defaultRole={defaultRole} />

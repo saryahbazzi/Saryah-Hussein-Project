@@ -4,7 +4,7 @@ export type CardLang = "ar" | "en";
 export function formatEventDate(iso: string | Date, lang: CardLang, withTime = true): string {
   const d = typeof iso === "string" ? new Date(iso) : iso;
   if (Number.isNaN(d.getTime())) return "";
-  const locale = lang === "ar" ? "ar-SA-u-nu-latn" : "en-GB";
+  const locale = lang === "ar" ? "ar-SA-u-ca-gregory-nu-latn" : "en-GB";
   const day = new Intl.DateTimeFormat(locale, { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: "Asia/Riyadh" }).format(d);
   if (!withTime) return day;
   const time = new Intl.DateTimeFormat(locale, { hour: "numeric", minute: "2-digit", timeZone: "Asia/Riyadh" }).format(d);

@@ -113,3 +113,6 @@ body {
   .card-shimmer::after { animation: none; display: none; }
   .card-stagger > * { opacity: 1; animation: none; }
 }
+
+/* Lining figures in display faces so statistics and prices read cleanly */
+.font-display, .font-display-en { font-variant-numeric: lining-nums; }

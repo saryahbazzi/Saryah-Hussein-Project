@@ -58,8 +58,11 @@ export function Wizard() {
     const slug = sp.get("template");
     const spec = slug ? getTemplate(slug) : undefined;
     if (spec) s = { ...s, templateSlug: spec.slug, details: { ...s.details, occasion: s.details.title ? s.details.occasion : spec.occasion }, custom: { ...s.custom, palette: stored?.templateSlug === spec.slug ? s.custom.palette : null } };
+    const clientParam = sp.get("client");
+    if (clientParam) s = { ...s, details: { ...s.details, clientId: clientParam } };
     setState(s);
     setHydrated(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- run once on mount
   }, []);
 
   useEffect(() => { if (hydrated && !created) save(state); }, [state, hydrated, created]);

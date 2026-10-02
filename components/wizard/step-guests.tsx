@@ -127,12 +127,12 @@ export function StepGuests({ state, update, errors }: StepProps<"guests" | "cons
         ) : (
           <ul className="mt-4 divide-y divide-line">
             {rowsToShow.slice(0, shown).map(({ g, i }) => (
-              <li key={i} className="grid grid-cols-[1fr_auto] items-start gap-3 py-3 sm:grid-cols-[1.2fr_1fr_5rem_auto_auto]">
-                <div className="min-w-0">
+              <li key={i} className="grid grid-cols-[1fr_5rem_2.75rem] items-start gap-x-3 gap-y-2 py-3 sm:grid-cols-[1.2fr_1fr_5rem_auto_2.75rem]">
+                <div className="col-span-2 min-w-0 sm:col-span-1">
                   <label className="sr-only" htmlFor={`g-name-${i}`}>{t("row.name")}</label>
                   <Input id={`g-name-${i}`} value={g.name} placeholder={t("row.name")} aria-invalid={g.issues.includes("missing_name")} className="min-h-11 py-1.5 text-sm" onChange={(ev) => patch(i, { name: ev.target.value })} />
                 </div>
-                <div className="row-span-1 sm:order-5">
+                <div className="sm:order-5">
                   <button type="button" onClick={() => setGuests((x) => x.filter((_, j) => j !== i))} aria-label={t("row.remove", { name: g.name || String(i + 1) })} className="inline-flex size-11 items-center justify-center rounded-full text-rose hover:bg-rose/10"><span aria-hidden="true">✕</span></button>
                 </div>
                 <div className="min-w-0">
@@ -144,7 +144,7 @@ export function StepGuests({ state, update, errors }: StepProps<"guests" | "cons
                   <label className="sr-only" htmlFor={`g-size-${i}`}>{t("row.partySize")}</label>
                   <Input id={`g-size-${i}`} type="number" min={1} max={MAX_PARTY} inputMode="numeric" value={g.partySize} className="min-h-11 py-1.5 text-center text-sm" onChange={(ev) => patch(i, { partySize: Number(ev.target.value) || 1 })} />
                 </div>
-                <div className="col-span-2 flex flex-wrap gap-1.5 sm:col-span-1 sm:order-4">
+                <div className="col-span-3 flex flex-wrap gap-1.5 sm:order-4 sm:col-span-1">
                   {g.issues.length === 0 ? <Badge tone="sage">✓ {t("issue.ok")}</Badge> : g.issues.map((x) => <Badge key={x} tone={ISSUE_TONE[x]}>{t(`issue.${x}`)}</Badge>)}
                 </div>
               </li>

@@ -48,7 +48,7 @@ export function DemoApp({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen bg-ivory">
       <div className="bg-navy px-4 py-1.5 text-center text-xs text-ivory/90">{t("demo.banner")}</div>
       <header className="border-b border-line bg-ivory/95">
-        <div className="mx-auto flex min-h-16 max-w-6xl flex-wrap items-center justify-between gap-x-4 gap-y-2 px-5 py-2 sm:px-8">
+        <div className="mx-auto flex min-h-16 max-w-6xl flex-wrap items-center justify-between gap-x-4 gap-y-1 px-5 py-2 sm:px-8">
           <Logo name={brand} />
           <nav aria-label={t("nav.main")} className="order-3 -mx-1 flex w-full gap-1 overflow-x-auto sm:order-none sm:mx-0 sm:w-auto">
             {nav.map((n) => {
@@ -65,43 +65,56 @@ export function DemoApp({ children }: { children: React.ReactNode }) {
               );
             })}
           </nav>
-          <div className="flex min-w-0 flex-wrap items-center justify-end gap-2">
-            <label className="sr-only" htmlFor="role-switch">{t("demo.switchRole")}</label>
-            <select
-              id="role-switch"
-              value={user.id}
-              onChange={(e) => {
-                signInAs(e.target.value);
-                const next = state.users.find((u) => u.id === e.target.value);
-                if (next) router.push(homeFor(next.role));
-              }}
-              className="min-h-11 max-w-[11rem] rounded-full border border-oud/20 bg-ivory px-3 text-sm font-semibold"
-            >
-              {demoUsers.map((u) => (
-                <option key={u.id} value={u.id}>{t(`roles.${u.role}`)} · {u.name}</option>
-              ))}
-            </select>
+          <div className="flex items-center gap-2">
             <LanguageSwitcher />
-            <button
-              type="button"
-              onClick={() => { signOutDemo(); router.replace("/login"); }}
-              className="inline-flex min-h-11 items-center rounded-full px-3 text-sm font-semibold text-oud-soft hover:bg-oud/5"
-            >
-              {t("signOut")}
-            </button>
+            <details className="group relative">
+              <summary
+                aria-label={t("demo.account")}
+                className="flex h-11 min-w-11 cursor-pointer list-none items-center justify-center gap-1.5 rounded-full border border-oud/20 bg-white px-3 text-sm font-semibold text-navy [&::-webkit-details-marker]:hidden"
+              >
+                <span aria-hidden="true" className="flex h-6 w-6 items-center justify-center rounded-full bg-navy text-xs text-ivory">
+                  {user.name.charAt(0).toUpperCase()}
+                </span>
+                <span className="hidden sm:inline">{t(`roles.${user.role}`)}</span>
+                <span aria-hidden="true" className="text-xs transition group-open:rotate-180">▾</span>
+              </summary>
+              <div className="absolute end-0 z-50 mt-2 w-72 max-w-[calc(100vw-2.5rem)] rounded-3xl border border-line bg-ivory p-3 shadow-lift">
+                <p className="px-3 pb-2 pt-1 text-xs font-semibold text-oud-soft">{t("demo.switchRole")}</p>
+                <ul>
+                  {demoUsers.map((u) => (
+                    <li key={u.id}>
+                      <button
+                        type="button"
+                        aria-current={u.id === user.id ? "true" : undefined}
+                        onClick={(e) => {
+                          signInAs(u.id);
+                          e.currentTarget.closest("details")?.removeAttribute("open");
+                          router.push(homeFor(u.role));
+                        }}
+                        className={clsx("flex min-h-12 w-full flex-col items-start justify-center rounded-2xl px-3 text-start", u.id === user.id ? "bg-navy text-ivory" : "hover:bg-sand")}
+                      >
+                        <span className="text-sm font-semibold">{t(`roles.${u.role}`)}</span>
+                        <span className={clsx("text-xs", u.id === user.id ? "text-ivory/75" : "text-oud-soft")}><bdi>{u.name}</bdi></span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-2 flex flex-col border-t border-line pt-2">
+                  <button type="button" className="min-h-11 rounded-2xl px-3 text-start text-sm font-semibold text-oud-soft hover:bg-sand"
+                    onClick={() => { if (window.confirm(t("demo.reset") + "?")) resetDemo(); }}>
+                    {t("demo.reset")}
+                  </button>
+                  <button type="button" className="min-h-11 rounded-2xl px-3 text-start text-sm font-semibold text-rose hover:bg-sand"
+                    onClick={() => { signOutDemo(); router.replace("/login"); }}>
+                    {t("signOut")}
+                  </button>
+                </div>
+              </div>
+            </details>
           </div>
         </div>
       </header>
       <main id="main" className="mx-auto max-w-6xl px-5 py-8 sm:px-8 sm:py-10">{children}</main>
-      <footer className="mx-auto max-w-6xl px-5 pb-10 sm:px-8">
-        <button
-          type="button"
-          className="text-xs font-medium text-oud-soft underline"
-          onClick={() => { if (window.confirm(t("demo.reset") + "?")) resetDemo(); }}
-        >
-          {t("demo.reset")}
-        </button>
-      </footer>
     </div>
   );
 }
