@@ -48,7 +48,7 @@ export function TemplatePreview({ spec, onClose }: { spec: CardSpec; onClose: ()
       aria-labelledby={`${id}-title`}
       onClose={onClose}
       onClick={(e) => { if (e.target === ref.current) ref.current?.close(); }}
-      className="fixed inset-0 m-0 h-dvh max-h-none w-screen max-w-none overflow-y-auto bg-ivory p-0 text-oud backdrop:bg-oud/60 md:ms-auto md:w-[min(58rem,100vw)] md:shadow-lift"
+      className="fixed inset-0 m-0 h-dvh open:flex open:flex-col max-h-none w-screen max-w-none overflow-y-auto bg-ivory p-0 text-oud backdrop:bg-oud/60 md:ms-auto md:w-[min(58rem,100vw)] md:shadow-lift"
     >
       <style>{`
         @keyframes dw-drift { 0% { transform: scale(1) translate3d(0,0,0); } 50% { transform: scale(1.035) translate3d(0,-6px,0); } 100% { transform: scale(1) translate3d(0,0,0); } }
@@ -66,7 +66,7 @@ export function TemplatePreview({ spec, onClose }: { spec: CardSpec; onClose: ()
         </button>
       </div>
 
-      <div className="grid gap-8 p-5 pb-32 md:grid-cols-[minmax(0,19rem)_1fr] md:gap-10 md:p-8 md:pb-8">
+      <div className="grid flex-1 content-start gap-8 p-5 pb-32 md:grid-cols-[minmax(0,19rem)_1fr] md:gap-10 md:p-8 md:pb-8">
         <div className="mx-auto w-full max-w-[19rem] md:sticky md:top-24 md:self-start">
           <div className={clsx(spec.kind === "video" && "dw-drift")}>
             <InvitationCard
@@ -126,7 +126,7 @@ export function TemplatePreview({ spec, onClose }: { spec: CardSpec; onClose: ()
         </div>
       </div>
 
-      <div className="fixed inset-x-0 bottom-0 z-10 border-t border-line bg-ivory/95 p-4 backdrop-blur md:sticky md:px-8">
+      <div className="fixed inset-x-0 bottom-0 z-10 border-t border-line bg-ivory/95 p-4 backdrop-blur md:sticky md:mt-auto md:px-8">
         <div className="mx-auto flex max-w-xl flex-col gap-2 md:max-w-none md:flex-row md:items-center md:justify-between">
           <p className="hidden text-sm text-oud-soft md:block">{t("preview.ctaNote")}</p>
           <ButtonLink href={`/events/new?template=${spec.slug}`} className="w-full md:w-auto">{t("preview.cta")}</ButtonLink>

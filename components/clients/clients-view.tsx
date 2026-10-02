@@ -60,7 +60,7 @@ export function ClientsView() {
   const plannerName = (id: string) => state.users.find((u) => u.id === id)?.org ?? state.users.find((u) => u.id === id)?.name;
 
   return (
-    <div className="mx-auto w-full max-w-6xl px-5 py-8 sm:px-8 sm:py-10">
+    <div>
       <PageHeader title={t("title")} lead={isAdmin ? t("leadAdmin") : t("lead")} />
 
       <section aria-label={t("summaryLabel")} className="grid grid-cols-2 gap-3 lg:grid-cols-5">

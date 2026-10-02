@@ -50,9 +50,9 @@ export function AdminDashboard() {
   };
 
   return (
-    <div className="mx-auto w-full max-w-6xl px-5 py-8 sm:px-8 sm:py-10">
+    <div>
       <PageHeader title={t("title")} lead={t("lead")} />
-      <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
+      <div className="overflow-x-auto">
         <div role="tablist" aria-label={t("tabsLabel")} onKeyDown={onKey} className="inline-flex min-w-full gap-1 rounded-full border border-line bg-sand/60 p-1 sm:min-w-0">
           {TABS.map((id) => (
             <button

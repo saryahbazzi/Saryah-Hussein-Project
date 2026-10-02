@@ -41,7 +41,7 @@ export function CheckinEventList() {
                   <p className="text-sm text-oud-soft">{e.venue}</p>
 
                   <div className="mt-5 flex items-end justify-between gap-3">
-                    <p className="font-display text-4xl font-bold tabular-nums text-navy">
+                    <p className="font-sans text-4xl font-bold tabular-nums text-navy">
                       {c.attended}<span className="text-xl text-oud-soft"> / {c.confirmed}</span>
                     </p>
                     <p className="pb-1 text-sm text-oud-soft">{t("people", { count: c.people })}</p>

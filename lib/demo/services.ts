@@ -13,7 +13,7 @@ import type { DemoEvent, DemoGuest } from "./types";
  */
 
 export function eventDateText(ev: DemoEvent, locale: MessageLocale): string {
-  return new Intl.DateTimeFormat(locale === "ar" ? "ar-SA-u-nu-latn" : "en-GB", {
+  return new Intl.DateTimeFormat(locale === "ar" ? "ar-SA-u-ca-gregory-nu-latn" : "en-GB", {
     weekday: "long", day: "numeric", month: "long", year: "numeric", hour: "2-digit", minute: "2-digit", timeZone: "Asia/Riyadh",
   }).format(new Date(ev.startsAt));
 }

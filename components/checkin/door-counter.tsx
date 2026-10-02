@@ -24,7 +24,7 @@ export function DoorCounter({ counts, title }: { counts: DoorCounts; title: stri
       <div className="min-w-0 flex-1">
         <p className="truncate text-xs font-semibold text-ivory/70">{title}</p>
         <p className="flex items-baseline gap-2" aria-live="off">
-          <span className="font-display text-4xl font-bold leading-none tabular-nums">{counts.attended}</span>
+          <span className="font-sans text-4xl font-bold leading-none tabular-nums">{counts.attended}</span>
           <span className="text-lg font-semibold tabular-nums text-ivory/70">/ {counts.confirmed}</span>
           <span className="text-sm text-ivory/70">{t("label")}</span>
         </p>
